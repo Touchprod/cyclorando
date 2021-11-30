@@ -2,3 +2,18 @@
   font-family: "Abel";
   src: url("../fonts/Abel-Regular.ttf") format("truetype");
 }
+
+:root {
+  --ff-blue: #172882;
+  --ff-red: #d1031b;
+  --ff-blue-light: #4b5796;
+  --ff-white: #ffffff;
+  --ff-big-corner: 50px;
+  --ff-litle-corner: 25px;
+  --h1-size: 70px;
+  --h2-size: 60px;
+}
+
+#navbar {
+  background-color: var(--ff-blue);
+}
