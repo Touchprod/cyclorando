@@ -12,8 +12,67 @@
   --ff-litle-corner: 25px;
   --h1-size: 70px;
   --h2-size: 60px;
+  --ff-font-family: "Abel", Arial, Helvetica, sans-serif;
 }
 
 #navbar {
   background-color: var(--ff-blue);
+}
+
+.nav-pills li.nav-item {
+  margin-right: 1.5rem;
+}
+
+.nav-pills li.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-pills .nav-link {
+  border: 2px solid var(--ff-white);
+  border-radius: var(--ff-litle-corner);
+  background-color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--ff-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-font-family);
+  color: var(--ff-blue);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.btn {
+  font-family: var(--ff-font-family);
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--ff-blue);
+  font-size: 1.25rem;
+  border-radius: var(--ff-litle-corner);
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: none;
+  transition: all 200ms ease-in;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: var(--ff-blue);
+  border-radius: var(--ff-litle-corner);
+  border: 3px solid var(--ff-blue-light);
+  transition: all 200ms ease-in;
 }
