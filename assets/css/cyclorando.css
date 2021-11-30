@@ -65,7 +65,7 @@ h1 {
   font-size: 1.25rem;
   border-radius: var(--ff-litle-corner);
   padding: 0.5rem 2rem 0.5rem 2rem;
-  border: none;
+  border: 0px solid var(--ff-blue-light);
   transition: all 200ms ease-in;
 }
 
@@ -108,4 +108,42 @@ h1 {
   position: absolute;
   z-index: 1;
   padding-right: 1.5rem;
+}
+
+/***
+** CARD **
+***/
+
+.card {
+  background-color: var(--ff-blue);
+  border-radius: var(--ff-litle-corner);
+}
+
+.card img {
+  border-radius: var(--ff-litle-corner);
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.card .card-title {
+  color: var(--ff-white);
+}
+.card .card-text {
+  color: var(--ff-white);
+  font-weight: 200;
+}
+
+.card a.btn {
+  color: var(--ff-red);
+  background-color: var(--ff-white);
+  border-radius: var(--ff-litle-corner);
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  transition: all 200ms ease-in;
+}
+
+.card a.btn:hover {
+  color: var(--ff-red);
+  background-color: var(--ff-white);
+  border-radius: var(--ff-litle-corner);
+  border: 0.25rem solid var(--ff-red);
+  transition: all 200ms ease-in;
 }
