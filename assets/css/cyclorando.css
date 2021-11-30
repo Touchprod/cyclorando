@@ -76,3 +76,36 @@ h1 {
   border: 3px solid var(--ff-blue-light);
   transition: all 200ms ease-in;
 }
+
+.large-title {
+  background-color: var(--ff-blue-light);
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+}
+.large-title h2 {
+  color: white;
+  font-family: var(--ff-font-family);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.large-title-before {
+  background-color: var(--ff-blue-light);
+}
+.large-title-before img {
+  height: 10rem !important;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1rem;
+}
+
+.large-title-after {
+  background-color: var(--ff-blue-light);
+}
+.large-title-after img {
+  height: 10rem !important;
+  position: absolute;
+  z-index: 1;
+  margin-right: 1rem;
+}
