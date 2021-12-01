@@ -77,12 +77,13 @@ h1 {
   transition: all 200ms ease-in;
 }
 
-.bg-primary {
-  background-color: var(--ff-blue);
-}
-
 .bg-primary-light {
   background-color: var(--ff-blue-light);
+}
+
+.divider-v {
+  border-right: 1px solid var(--ff-red);
+  margin: 0 1rem 0 1rem;
 }
 /**
 ** LARGE TITLE **
@@ -291,6 +292,58 @@ h6 {
 }
 
 .list-group-item h6 {
-    color: black;
-    font-size: 1.3rem;
+  color: black;
+  font-size: 1.3rem;
+}
+
+/** 
+** END OF LIST-ITEMS **
+**/
+
+/** 
+** FOOTER **
+**/
+footer.bg-primary {
+  background-color: var(--ff-blue) !important;
+}
+
+footer .footer-logo img {
+  max-height: 10rem;
+}
+
+footer .footer-text p {
+  color: white;
+  font-weight: 200;
+  max-width: 50%;
+}
+
+footer .footer-ul .footer-li img {
+  max-height: 3.5rem;
+}
+
+footer .footer-ul .footer-li .footer-li-text p {
+  color: white;
+}
+
+footer .footer-bottom {
+  background-color: white;
+  border-radius: var(--ff-litle-corner);
+  border: 2px solid var(--ff-red);
+  color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  width: 30%;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+footer .footer-bottom a {
+  color: var(--ff-blue);
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+footer .footer-bottom a:hover {
+  color: var(--ff-blue);
+  text-decoration: underline;
+  transition: all 200ms ease-out;
 }
