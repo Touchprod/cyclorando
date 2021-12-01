@@ -77,6 +77,13 @@ h1 {
   transition: all 200ms ease-in;
 }
 
+.bg-primary {
+  background-color: var(--ff-blue);
+}
+
+.bg-primary-light {
+  background-color: var(--ff-blue-light);
+}
 /**
 ** LARGE TITLE **
 **/
@@ -151,13 +158,14 @@ h1 {
   color: var(--ff-red);
   background-color: var(--ff-white);
   border-radius: var(--ff-litle-corner);
-  border: 0.25rem solid var(--ff-red);
+  border: 0.15rem solid var(--ff-red);
   transition: all 200ms ease-in;
 }
 
 /**
 ** END OF CARD **
 **/
+
 .big-img-container {
   position: relative;
   overflow: hidden;
@@ -198,7 +206,7 @@ h1 {
     linear-gradient(180deg, #00000008 0%, #00000099 30%, #000000cc 100%) 0% 0%
     no-repeat padding-box;
   width: 100%;
-  height: 100%;
+  height: 50%;
   border-radius: 0 0 var(--ff-litle-corner) var(--ff-litle-corner);
   overflow: hidden;
   right: 0;
@@ -209,8 +217,80 @@ h1 {
   color: white;
 }
 
-.img-overlay:hover h4::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f007";
+.big-img-btn + .img-overlay:hover h4::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+  content: "\f101";
+  margin-right: 0.5rem;
+}
+
+/** 
+** BLOCK **
+**/
+
+.block {
+  padding: 1rem;
+}
+
+.block-rounded {
+  border-radius: var(--ff-litle-corner);
+}
+
+.block .block-header {
+  color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.block.bg-primary .block-header h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+.block.bg-primary .block-content {
+  background-color: var(--ff-blue);
+}
+
+/** 
+** END OF BLOCK **
+**/
+
+/** 
+** LIST-ITEMS **
+**/
+
+.list-group-item {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.list-group-item:first-child {
+  border-radius: 15px;
+}
+
+.list-group-item:last-child {
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+
+.list-group-item .list-item-date {
+  background-color: var(--ff-blue);
+  color: white;
+  font-family: var(--ff-font-family);
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+.list-group-item h6 {
+    color: black;
+    font-size: 1.3rem;
 }
