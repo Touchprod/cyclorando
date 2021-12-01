@@ -19,15 +19,15 @@
   background-color: var(--ff-blue);
 }
 
-.nav-pills li.nav-item {
+.navbar-nav .nav-pills li.nav-item {
   margin-right: 1.5rem;
 }
 
-.nav-pills li.nav-item:last-child {
+.navbar-nav .nav-pills li.nav-item:last-child {
   margin-right: 0;
 }
 
-.nav-pills .nav-link {
+.navbar-nav .nav-pills .nav-link {
   border: 2px solid var(--ff-white);
   border-radius: var(--ff-litle-corner);
   background-color: var(--ff-blue);
@@ -37,7 +37,7 @@
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-.nav-pills .nav-link.active {
+.navbar-nav .nav-pills .nav-link.active {
   background-color: var(--ff-blue);
 }
 
@@ -498,3 +498,32 @@ footer .footer-bottom a:hover {
 /** 
 ** END OF FOOTER **
 **/
+
+/** 
+** MEDIA QUERIES **
+**/
+.navbar-toggler {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar-collapse.collapse.show {
+  height: 100vh;
+  position: absolute;
+  background-color: var(--ff-blue);
+  width: 100%;
+  left: 0;
+  z-index: 3;
+}
+
+.navbar-collapse.collapse.show .nav-pills {
+  padding: 2rem;
+}
+.navbar-collapse.collapse.show .nav-pills li.nav-item {
+  width: 100%;
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
