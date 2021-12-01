@@ -77,6 +77,26 @@ h1 {
   transition: all 200ms ease-in;
 }
 
+.bg-primary-light {
+  background-color: var(--ff-blue-light);
+}
+
+.divider-v {
+  border-right: 1px solid var(--ff-red);
+  margin: 0 1rem 0 1rem;
+}
+
+.title {
+  color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  margin-bottom: 2rem;
+}
+
+.title::before {
+  content: "»";
+  font-weight: 300;
+  margin-right: 0.5rem;
+}
 /**
 ** LARGE TITLE **
 **/
@@ -97,6 +117,11 @@ h1 {
 .large-title-before {
   background-color: var(--ff-blue-light);
 }
+
+.container .large-title-before {
+  border-radius: var(--ff-litle-corner) 0 0 var(--ff-litle-corner);
+}
+
 .large-title-before img {
   height: 10rem !important;
   position: absolute;
@@ -106,6 +131,10 @@ h1 {
 
 .large-title-after {
   background-color: var(--ff-blue-light);
+}
+
+.container .large-title-after {
+  border-radius: 0 var(--ff-litle-corner) var(--ff-litle-corner) 0;
 }
 .large-title-after img {
   height: 10rem !important;
@@ -151,13 +180,24 @@ h1 {
   color: var(--ff-red);
   background-color: var(--ff-white);
   border-radius: var(--ff-litle-corner);
-  border: 0.25rem solid var(--ff-red);
+  border: 0.15rem solid var(--ff-red);
   transition: all 200ms ease-in;
+}
+
+.card-person {
+  max-height: 25rem;
+}
+
+.card-person .card-img-top {
+  overflow: hidden;
+  height: 15rem;
+  object-fit: cover;
 }
 
 /**
 ** END OF CARD **
 **/
+
 .big-img-container {
   position: relative;
   overflow: hidden;
@@ -198,7 +238,7 @@ h1 {
     linear-gradient(180deg, #00000008 0%, #00000099 30%, #000000cc 100%) 0% 0%
     no-repeat padding-box;
   width: 100%;
-  height: 100%;
+  height: 50%;
   border-radius: 0 0 var(--ff-litle-corner) var(--ff-litle-corner);
   overflow: hidden;
   right: 0;
@@ -207,4 +247,134 @@ h1 {
 
 .img-overlay h4 {
   color: white;
+}
+
+.big-img-btn + .img-overlay:hover h4::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 300;
+  content: "\f101";
+  margin-right: 0.5rem;
+}
+
+/** 
+** BLOCK **
+**/
+
+.block {
+  padding: 1rem;
+}
+
+.block-rounded {
+  border-radius: var(--ff-litle-corner);
+}
+
+.block .block-header {
+  color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.block.bg-primary .block-header h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+.block.bg-primary .block-content {
+  background-color: var(--ff-blue);
+}
+
+/** 
+** END OF BLOCK **
+**/
+
+/** 
+** LIST-ITEMS **
+**/
+
+.list-group-item {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.list-group-item:first-child {
+  border-radius: 15px;
+}
+
+.list-group-item:last-child {
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+
+.list-group-item .list-item-date {
+  background-color: var(--ff-blue);
+  color: white;
+  font-family: var(--ff-font-family);
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+.list-group-item h6 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+/** 
+** END OF LIST-ITEMS **
+**/
+
+/** 
+** FOOTER **
+**/
+footer.bg-primary {
+  background-color: var(--ff-blue) !important;
+}
+
+footer .footer-logo img {
+  max-height: 10rem;
+}
+
+footer .footer-text p {
+  color: white;
+  font-weight: 200;
+  max-width: 50%;
+}
+
+footer .footer-ul .footer-li img {
+  max-height: 3.5rem;
+}
+
+footer .footer-ul .footer-li .footer-li-text p {
+  color: white;
+}
+
+footer .footer-bottom {
+  background-color: white;
+  border-radius: var(--ff-litle-corner);
+  border: 2px solid var(--ff-red);
+  color: var(--ff-blue);
+  font-family: var(--ff-font-family);
+  width: 30%;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+footer .footer-bottom a {
+  color: var(--ff-blue);
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+footer .footer-bottom a:hover {
+  color: var(--ff-blue);
+  text-decoration: underline;
+  transition: all 200ms ease-out;
 }
