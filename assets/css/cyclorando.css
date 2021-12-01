@@ -194,6 +194,30 @@ h1 {
   object-fit: cover;
 }
 
+.card-event .card-img-top {
+  object-fit: cover;
+  overflow: hidden;
+  width: 40%;
+  min-width: 40%;
+}
+
+.card-event .card-body .card-title {
+  width: 80%;
+}
+
+.card-event .card-body .title-option {
+  width: 20%;
+}
+
+.card-event .card-body .title-option p {
+  background-color: white;
+  color: var(--ff-red);
+  border-radius: var(--ff-litle-corner);
+  text-align: center;
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+  font-size: 1.2rem;
+}
+
 /**
 ** END OF CARD **
 **/
