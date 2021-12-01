@@ -110,6 +110,13 @@ h1 {
   font-weight: 300;
   margin-right: 0.5rem;
 }
+
+.h-50 {
+  height: 50%;
+  min-height: 50%;
+  max-height: 50%;
+  overflow: hidden;
+}
 /**
 ** LARGE TITLE **
 **/
@@ -400,6 +407,45 @@ form .form-control:focus {
 
 /** 
 ** END OF FORMS **
+**/
+
+/** 
+** MAP **
+**/
+.container-map {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.container-map img {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: var(--ff-litle-corner);
+  border: 5px solid var(--ff-blue-light);
+  height: 15rem;
+  width: 80%;
+  display: block;
+}
+
+.container-map .overlay-blue-light {
+  position: absolute;
+  background-color: #4b5796a4;
+  border-radius: var(--ff-litle-corner);
+  border: 3px solid var(--ff-blue-light);
+  padding: 2rem;
+  width: 40%;
+
+  font-size: 1rem;
+  color: white;
+  font-family: var(--ff-font-family);
+}
+
+.container-map .overlay-blue-light p {
+  line-height: 1.1;
+  margin: 0;
+}
+/** 
+** END OF MAP **
 **/
 
 /** 
