@@ -345,6 +345,19 @@ h6 {
 **/
 
 /** 
+** HERO SECTION **
+**/
+
+.hero-section img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/** 
+** END OF HERO SECTION **
+**/
+
+/** 
 ** LIST-ITEMS **
 **/
 
@@ -462,7 +475,7 @@ footer .footer-logo img {
 footer .footer-text p {
   color: white;
   font-weight: 200;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 footer .footer-ul .footer-li img {
@@ -479,8 +492,7 @@ footer .footer-bottom {
   border: 2px solid var(--ff-red);
   color: var(--ff-blue);
   font-family: var(--ff-font-family);
-  width: 30%;
-  padding: 0.7rem;
+  padding: 0.7rem 2rem 0.7rem 2rem;
   text-align: center;
 }
 
@@ -500,7 +512,7 @@ footer .footer-bottom a:hover {
 **/
 
 /** 
-** MEDIA QUERIES **
+** MOBILES **
 **/
 .navbar-toggler {
   color: white;
@@ -526,4 +538,10 @@ footer .footer-bottom a:hover {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  footer .footer-text p {
+    width: 50% !important;
+  }
 }
