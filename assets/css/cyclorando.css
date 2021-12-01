@@ -217,8 +217,6 @@ h1 {
 .card-event .card-img-top {
   object-fit: cover;
   overflow: hidden;
-  width: 40%;
-  min-width: 40%;
 }
 
 .card-event .card-body .card-title {
@@ -543,5 +541,10 @@ footer .footer-bottom a:hover {
 @media (min-width: 1200px) {
   footer .footer-text p {
     width: 50% !important;
+  }
+
+  .card-event .card-img-top {
+    width: 40%;
+    min-width: 40%;
   }
 }
