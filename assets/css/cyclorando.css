@@ -35,10 +35,56 @@
   color: white;
   text-transform: uppercase;
   padding: 0.5rem 2rem 0.5rem 2rem;
+  position: relative;
+  transition: all 200ms ease;
 }
 
 .navbar-nav .nav-pills .nav-link.active {
   background-color: var(--ff-blue);
+}
+
+.navbar-nav .nav-pills .nav-link.active::before {
+  content: url("../img/triangle-nav.png");
+  position: absolute;
+  right: 0.75rem;
+  bottom: -1.15rem;
+  opacity: 1;
+}
+
+.navbar-nav .nav-pills .nav-link::before {
+  content: url("../img/triangle-nav.png");
+  position: absolute;
+  right: 70%;
+  bottom: -1.15rem;
+  transition: all 800ms ease;
+  opacity: 0;
+}
+
+.navbar-nav .nav-pills .nav-link::after {
+  content: url("../img/point-nav.png");
+  position: absolute;
+  right: -0.5rem;
+  top: 0.75rem;
+  transition: all 800ms ease;
+  opacity: 0;
+}
+
+.navbar-nav .nav-pills .nav-link:hover::before {
+  content: url("../img/triangle-nav.png");
+  position: absolute;
+  right: 0.75rem;
+  bottom: -1.15rem;
+  transition: all 800ms ease;
+  opacity: 1;
+}
+
+.navbar-nav .nav-pills .nav-link:hover::after {
+  content: url("../img/point-nav.png");
+  position: absolute;
+  right: -0.5rem;
+  top: 0.75rem;
+  transition: all 800ms ease;
+  opacity: 1;
 }
 
 h1,
