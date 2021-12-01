@@ -24,9 +24,9 @@
   </head>
   <body>
     <main>
-      <nav class="navbar-fixed-top" id="navbar">
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
+        <div class="container justify-content-between">
+          <div class="d-flex">
             <a
               href="index.html"
               class="
@@ -43,27 +43,43 @@
                 alt="Comité Départemental du Morbihan"
               />
             </a>
-            <ul class="nav nav-pills d-flex align-items-center">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link" aria-current="page"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="comite-directeur.html" class="nav-link active"
-                  >Le comité</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="nos-evenements.html" class="nav-link"
-                  >Nos évènements</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Nous contacter</a>
-              </li>
-            </ul>
-          </header>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-nav flex-row">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="nav nav-pills d-flex align-items-center">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="comite-directeur.html" class="nav-link">Le comité</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nos-evenements.html" class="nav-link"
+                    >Nos évènements</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="container mt-5 mb-5">
@@ -101,21 +117,28 @@
         </div>
         <div class="row">
           <h2 class="title mb-5">Les prochains évènements</h2>
-          <div class="row px-5">
+          <div class="row px-lg-5">
             <div class="col-12 mb-4">
-              <div class="card card-event mx-5 mb-5">
-                <div class="d-flex gap-1 mb-2">
+              <div class="card card-event mx-lg-5 mb-5">
+                <div class="d-lg-flex gap-1 mb-2">
                   <img
                     src="assets/img/photos/velo-1.png"
                     class="card-img-top"
                     alt="Sortie en vélo"
                   />
                   <div class="card-body">
-                    <div class="d-flex gap-2 mb-2">
+                    <div class="d-lg-flex gap-2 mb-2">
                       <h4 class="card-title d-flex align-items-center">
                         Titre de l'évènement
                       </h4>
-                      <div class="title-option d-flex justify-content-end">
+                      <div
+                        class="
+                          title-option
+                          d-lg-flex
+                          justify-content-end
+                          w-auto
+                        "
+                      >
                         <p>25/11/2021</p>
                       </div>
                     </div>
@@ -142,19 +165,26 @@
             </div>
 
             <div class="col-12 mb-4">
-              <div class="card card-event mx-5 mb-5">
-                <div class="d-flex gap-1 mb-2">
+              <div class="card card-event mx-lg-5 mb-5">
+                <div class="d-lg-flex gap-1 mb-2">
                   <img
                     src="assets/img/photos/velo-2.png"
                     class="card-img-top"
                     alt="Sortie en vélo"
                   />
                   <div class="card-body">
-                    <div class="d-flex gap-2 mb-2">
+                    <div class="d-lg-flex gap-2 mb-2">
                       <h4 class="card-title d-flex align-items-center">
                         Titre de l'évènement
                       </h4>
-                      <div class="title-option d-flex justify-content-end">
+                      <div
+                        class="
+                          title-option
+                          d-lg-flex
+                          justify-content-end
+                          w-auto
+                        "
+                      >
                         <p>25/11/2021</p>
                       </div>
                     </div>
@@ -181,19 +211,26 @@
             </div>
 
             <div class="col-12 mb-4">
-              <div class="card card-event mx-5 mb-5">
-                <div class="d-flex gap-1 mb-2">
+              <div class="card card-event mx-lg-5 mb-5">
+                <div class="d-lg-flex gap-1 mb-2">
                   <img
                     src="assets/img/photos/velo-4.png"
                     class="card-img-top"
                     alt="Sortie en vélo"
                   />
                   <div class="card-body">
-                    <div class="d-flex gap-2 mb-2">
-                      <h4 class="card-title d-flex align-items-center">
+                    <div class="d-lg-flex gap-2 mb-2">
+                      <h4 class="card-title d-lg-flex align-items-center">
                         Titre de l'évènement
                       </h4>
-                      <div class="title-option d-flex justify-content-end">
+                      <div
+                        class="
+                          title-option
+                          d-lg-flex
+                          justify-content-end
+                          w-auto
+                        "
+                      >
                         <p>25/11/2021</p>
                       </div>
                     </div>
@@ -225,8 +262,8 @@
 
     <footer class="p-5 bg-primary">
       <div class="row mb-4">
-        <div class="col">
-          <div class="d-flex gap-3 py-3">
+        <div class="col-12 col-lg-8">
+          <div class="d-lg-flex gap-3 py-3">
             <div class="p-4">
               <a href="#" class="footer-logo">
                 <img
@@ -247,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="footer-ul">
             <div class="footer-li d-flex gap-3 py-3">
               <img
@@ -270,7 +307,7 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="footer-bottom">
+        <div class="footer-bottom w-auto">
           <a href="#">Nos mentions légales</a> <span class="divider-v"></span>
           <a href="#">© 2021 - Réalisation Kevin TOUCHARD</a>
         </div>

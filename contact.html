@@ -24,9 +24,9 @@
   </head>
   <body>
     <main>
-      <nav class="navbar-fixed-top" id="navbar">
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
+        <div class="container justify-content-between">
+          <div class="d-flex">
             <a
               href="index.html"
               class="
@@ -43,27 +43,43 @@
                 alt="Comité Départemental du Morbihan"
               />
             </a>
-            <ul class="nav nav-pills d-flex align-items-center">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link" aria-current="page"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="comite-directeur.html" class="nav-link active"
-                  >Le comité</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="nos-evenements.html" class="nav-link"
-                  >Nos évènements</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Nous contacter</a>
-              </li>
-            </ul>
-          </header>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-nav flex-row">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="nav nav-pills d-flex align-items-center">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="comite-directeur.html" class="nav-link">Le comité</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nos-evenements.html" class="nav-link"
+                    >Nos évènements</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="container mt-5 mb-5">
@@ -87,7 +103,7 @@
       </div>
       <div class="container">
         <div class="row mb-5">
-          <div class="col-6 d-flex align-items-center">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0 d-flex align-items-center">
             <div class="">
               <div class="p-5">
                 <h1>Comité Départemental De Cyclotourisme du Morbihan.</h1>
@@ -121,19 +137,19 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="block block-rounded bg-primary">
               <div class="block-content p-4">
                 <form>
                   <h2 class="mb-3">Écrivez-nous</h2>
                   <div class="row mb-3">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                       <label for="input-lastname" class="form-label"
                         >Votre nom</label
                       >
                       <input type="text" class="form-control" id="input-name" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                       <label for="input-firstname" class="form-label"
                         >Votre nom</label
                       >
@@ -145,7 +161,7 @@
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <div class="col-8">
+                    <div class="col-12 col-lg-8">
                       <label for="input-firstname" class="form-label"
                         >Votre adresse e-mail</label
                       >
@@ -187,8 +203,8 @@
 
     <footer class="p-5 bg-primary">
       <div class="row mb-4">
-        <div class="col">
-          <div class="d-flex gap-3 py-3">
+        <div class="col-12 col-lg-8">
+          <div class="d-lg-flex gap-3 py-3">
             <div class="p-4">
               <a href="#" class="footer-logo">
                 <img
@@ -209,7 +225,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="footer-ul">
             <div class="footer-li d-flex gap-3 py-3">
               <img
@@ -232,7 +248,7 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="footer-bottom">
+        <div class="footer-bottom w-auto">
           <a href="#">Nos mentions légales</a> <span class="divider-v"></span>
           <a href="#">© 2021 - Réalisation Kevin TOUCHARD</a>
         </div>

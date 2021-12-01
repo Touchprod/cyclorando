@@ -24,9 +24,9 @@
   </head>
   <body>
     <main>
-      <nav class="navbar-fixed-top" id="navbar">
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
+        <div class="container justify-content-between">
+          <div class="d-flex">
             <a
               href="index.html"
               class="
@@ -43,27 +43,43 @@
                 alt="Comité Départemental du Morbihan"
               />
             </a>
-            <ul class="nav nav-pills d-flex align-items-center">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link" aria-current="page"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="comite-directeur.html" class="nav-link active"
-                  >Le comité</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="nos-evenements.html" class="nav-link"
-                  >Nos évènements</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Nous contacter</a>
-              </li>
-            </ul>
-          </header>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-nav flex-row">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="nav nav-pills d-flex align-items-center">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="comite-directeur.html" class="nav-link">Le comité</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nos-evenements.html" class="nav-link"
+                    >Nos évènements</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="container mt-5 mb-5">
@@ -102,7 +118,7 @@
         <div class="row">
           <h2 class="title">Les membres du comité</h2>
           <div class="row">
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-1.jpg"
@@ -116,7 +132,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-2.jpg"
@@ -130,7 +146,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-3.jpg"
@@ -144,7 +160,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-4.jpg"
@@ -158,7 +174,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-5.jpg"
@@ -172,7 +188,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-6.jpg"
@@ -186,7 +202,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-7.jpg"
@@ -200,7 +216,7 @@
               </div>
             </div>
 
-            <div class="col-3 mb-5">
+            <div class="col-12 col-lg-3 mb-5">
               <div class="card card-person">
                 <img
                   src="assets/img/photos/person-8.jpg"
@@ -228,7 +244,7 @@
         </div>
 
         <div class="row gx-5 pb-5 mb-5">
-          <div class="col-8">
+          <div class="col-12 col-lg-8 mb-5 mb-lg-0">
             <div class="big-img-container">
               <img
                 src="assets/img/photos/velo-4.png"
@@ -241,7 +257,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="block block-rounded bg-primary-light">
               <div class="block-header">
                 <h3>Agenda des randos</h3>
@@ -298,8 +314,8 @@
 
     <footer class="p-5 bg-primary">
       <div class="row mb-4">
-        <div class="col">
-          <div class="d-flex gap-3 py-3">
+        <div class="col-12 col-lg-8">
+          <div class="d-lg-flex gap-3 py-3">
             <div class="p-4">
               <a href="#" class="footer-logo">
                 <img
@@ -320,7 +336,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="footer-ul">
             <div class="footer-li d-flex gap-3 py-3">
               <img
@@ -343,7 +359,7 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="footer-bottom">
+        <div class="footer-bottom w-auto">
           <a href="#">Nos mentions légales</a> <span class="divider-v"></span>
           <a href="#">© 2021 - Réalisation Kevin TOUCHARD</a>
         </div>
